@@ -1,0 +1,30 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.17;
+  color: $text-color-p;
+  background-color: $bg-color-main;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section {
+  padding: 94px 0;
+  margin-top: 0;
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    color: $text-color-h;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+}
