@@ -1,5 +1,9 @@
 .projects {
   padding-top: 0;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .projects-list {
@@ -17,6 +21,8 @@
 
   &__img {
     object-fit: cover;
+    width: 100%;
+    box-sizing: border-box;
   }
   &__label {
     position: absolute;

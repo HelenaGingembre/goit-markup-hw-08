@@ -1,12 +1,14 @@
 @import 'utils/variables';
-@import 'utils/placeholders';
 
 @import 'base/reset';
 
+@import 'utils/placeholders';
+
+@import 'components/section';
 @import 'components/header';
 @import 'components/logo';
 @import 'components/navigation';
-@import 'components/section';
+
 @import 'components/hero';
 @import 'components/feature-section';
 @import 'components/project-section';

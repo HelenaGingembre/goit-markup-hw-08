@@ -24,8 +24,24 @@
             target="_blank" rel="noopener noreferrer  nofollow">
                 <span class="logo__accent">Web</span>Studio
             </a>
-
-            <ul class="menu-list">
+            <button type="button" 
+            class="menu-button "
+            aria-expanded="false"
+            aria-controls="menu-list"
+            data-menu-button
+            >
+                <svg  
+                width="40"
+                height="40"
+                aria-label="Переключатель мобильного меню"
+                >
+                    <use class="icon-cross" 
+                    href="./images/symbol-defs.svg#icon-cross"></use>
+                    <use class="icon-menu"
+                     href="./images/symbol-defs.svg#icon-menu"></use>
+                </svg>
+            </button>
+            <ul class="menu-list " id="menu-list" data-menu>
                 <li class="menu-list__item item">
                     <a href="./index.html" class="link menu-list__link current" 
                     rel="noopener noreferrer  nofollow">Студия</a>
@@ -41,7 +57,7 @@
             </ul>
         </nav>
 
-        <ul class="nav-address">
+        <ul class="nav-address " data-menu>
             <li class="nav-address__item">
                 <svg class="nav-address__icon" width="16" height="12">
                     <use href="./images/symbol-defs.svg#icon-envelope"></use>
@@ -337,7 +353,7 @@
         </div>
         </section>
         <section class="section customer">
-            <div class="conteiner">
+            <div class="container">
                 <h2 class="section__title">Постоянные клиенты</h2>
                 <ul class="customer-list">
                     <li class="customer-list__item">

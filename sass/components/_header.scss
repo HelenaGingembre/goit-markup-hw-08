@@ -1,9 +1,10 @@
 .header {
   width: 100%;
-
+  position: relative;
   background-color: $bg-color-header;
   border-bottom: 1px solid $line-color;
 }
 .header > .container {
   display: flex;
+  justify-content: space-around;
 }
