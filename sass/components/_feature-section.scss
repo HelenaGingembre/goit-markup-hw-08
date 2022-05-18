@@ -12,7 +12,7 @@
   }
 }
 .feature-list__item {
-  min-width: 270px; /*????????????*/
+  min-width: 270px;
   text-align: left;
   margin-bottom: 30px;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -54,19 +54,15 @@
   text-transform: uppercase;
   color: $text-color-h;
   @media screen and (max-width: 767px) {
-    text-align: center; /*version mobile*/
+    text-align: center;
   }
 }
 .feature-list__text {
   font-weight: 400;
   line-height: 1.71;
-
   letter-spacing: 0.03em;
 }
 
-.feature-list__item + .feature-list__item {
-  // margin-left: 30px;
-}
 .feature-box {
   // width: 270px;
   height: 120px;

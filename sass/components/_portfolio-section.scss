@@ -2,15 +2,38 @@
   @extend %hidden;
 }
 .filter-list {
-  // display: flex;
-  // flex-wrap: wrap;
-  // flex-direction: row;
-  // margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+
+  @media screen and (max-width: 767px) {
+    justify-content: flex-start;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
-.filter-list__item + .filter-list__item {
-  margin-left: 8px;
+.filter-list__item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+  @media screen and (max-width: 479px) {
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    &:nth-child(-n + 3) {
+      margin-bottom: 15px;
+    }
+  }
 }
 .filter-list__btn {
   @extend %btn;
@@ -22,7 +45,7 @@
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-
+  box-sizing: border-box;
   border: 1px solid transparent;
   border-radius: 4px;
   cursor: pointer;
@@ -51,9 +74,10 @@
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .grid {
-  // margin-top: 50px;
-  // display: flex;
-  // flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .grid__item {
   min-width: 370px;
@@ -86,6 +110,7 @@
   overflow: hidden;
 
   &__img {
+    object-fit: cover;
     display: block;
     min-width: 100%;
     height: auto;
