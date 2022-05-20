@@ -10,32 +10,25 @@ body {
   //max-width: 1200px;
   //min-width: 320px;
   width: 100%;
-
   margin: 0 auto;
   padding: 0 15px;
-
   text-align: center;
-
   //outline: 1px solid tomato;
 
   @media screen and (min-width: 480px) {
     max-width: 450px;
-    // width: 100%;
     flex-basis: calc(100% - 30px);
   }
   @media screen and (min-width: 768px) {
     max-width: 738px;
-    // width: 100%;
     flex-basis: calc(100% - 30px);
   }
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
-    //flex-basis: calc(100%);
   }
 }
 
 .section {
-  //margin-top: 0;
   margin: 0 auto;
 
   @media screen and (max-width: 1199px) {

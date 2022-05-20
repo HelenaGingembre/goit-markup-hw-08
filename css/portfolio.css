@@ -86,7 +86,8 @@ img {
 
 .header > .container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer__logo, .header__logo {
@@ -137,13 +138,18 @@ img {
   margin-bottom: 20px;
 }
 
-.nav {
+.navigation {
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
-.nav .link:hover, .nav .link:focus {
+.navigation .link:hover, .navigation .link:focus {
   color: #2196f3;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .menu-button {

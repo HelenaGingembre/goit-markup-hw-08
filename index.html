@@ -18,8 +18,8 @@
 <body>
     <!--шапка сайта-->
     <header class="header" >
-    <div class="container">
-        <nav class="nav">
+        <div class="container">
+        
             <a href="./index.html" class="logo header__logo"
             target="_blank" rel="noopener noreferrer  nofollow">
                 <span class="logo__accent">Web</span>Studio
@@ -41,9 +41,11 @@
                      href="./images/symbol-defs.svg#icon-menu"></use>
                 </svg>
             </button>
-        <div class="menu-container" id="menu-container">
-            <div class="navigation">
-                <ul class="menu-list " id="menu-list" data-menu>
+            <div class="menu-container" id="menu-container" data-menu>
+            <nav class="navigation" >
+             
+            
+                <ul class="menu-list " >
                     <li class="menu-list__item item">
                         <a href="./index.html" class="link menu-list__link current" 
                         rel="noopener noreferrer  nofollow">Студия</a>
@@ -54,13 +56,13 @@
                     </li>
                     <li class="menu-list__item item">
                         <a  href="" class="link menu-list__link "
-                        rel="noopener noreferrer  nofollow">Контакты</a>
+                        rel="noopener noreferrer nofollow">Контакты</a>
                     </li>
                 </ul>
-            </div>
-       
-            <div class="contacts">
-                <ul class="nav-address " data-menu>
+           
+            </nav>
+            <div class="contacts" >
+                <ul class="nav-address " >
                     <li class="nav-address__item">
                         <svg class="nav-address__icon" width="16" height="12">
                             <use href="./images/symbol-defs.svg#icon-envelope"></use>
@@ -81,9 +83,10 @@
                     </li>
                 </ul>
             </div>
+            </div>
         </div>
-        </nav>
-    </div>
+        
+    
     </header>
     <main>
         <!-- Герой -->
@@ -575,5 +578,6 @@
     </div>
 <!-- Ставим перед закрывающим тегом body -->
 <script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
 </body>
 </html>
