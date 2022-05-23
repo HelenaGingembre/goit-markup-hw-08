@@ -25,7 +25,7 @@
                 <span class="logo__accent">Web</span>Studio
             </a>
             <button type="button" class="menu-open-btn" data-menu-open>
-                <svg  width="40"height="40"aria-label="Переключатель мобильного меню"
+                <svg  width="40" height="40" aria-label="Переключатель мобильного меню"
                  data-menu-open>
                     <use 
                      href="./images/symbol-defs.svg#icon-menu"></use>
@@ -188,34 +188,38 @@
                 <li class="projects-list__item">
                     <div class="card">
 
-                        <img 
-                        src="./images/desk-office.jpg"
-                        width="370"
-                        height="294"
-                        class="card__img"
-                        alt="Программист, работающий за своим компьютером">
-                        <p class="card__label">Десктопные приложения</p>
+                        <picture class="card__img">
+                            <source srcset="
+                                            ./images/desk-office.jpg    1x,
+                                            ./images/desk-office-2x.jpg 2x
+                                        " media="(min-width:1200px)" />
+                            
+                            <img src="./images/desk-office.jpg" alt="Программист, работающий за своим компьютером" />
+                        </picture>
+                     <p class="card__label">Десктопные приложения</p>
                     </div>
                 </li>
                 <li class="projects-list__item">
                     <div class="card">
-                        <img 
-                        src="./images/web-ui-designers.jpg" 
-                        width="370" 
-                        height="294"
-                        class="card__img"
-                        alt="Разработка интерфейся для мобильных телефонов">
+                        
+                        <picture class="card__img">
+                            <source srcset="./images/web-ui-designers.jpg    1x,
+                            ./images/web-ui-designers-2x.jpg 2x
+                            " media="(min-width:1200px)" />
+                             <img src="./images/web-ui-designers.jpg" alt="Разработка интерфейся для мобильных телефонов" />
+                        </picture>
                         <p class="card__label">Мобильные приложения</p>
                     </div>
                 </li>
                 <li class="projects-list__item">
                     <div class="card">
-                        <img 
-                        src="./images/graphic-tablet.jpg" 
-                        width="370" 
-                        height="294"
-                        class="card__img"
-                        alt="Веб дизайнер с графическим планшетом">
+                        
+                        <picture class="card__img">
+                            <source srcset="./images/graphic-tablet.jpg    1x,
+                                                    ./images/graphic-tablet-2x.jpg 2x
+                                                    " media="(min-width:1200px)" />
+                            <img src="./images/graphic-tablet.jpg" alt="Веб дизайнер с графическим планшетом" />
+                        </picture>
                         <p class="card__label">Дизайнерские решения</p>
                     </div>
 
@@ -229,11 +233,22 @@
             <h2 class="section__title">Наша команда</h2>
             <ul class="team-list">
                 <li class="team-list__item">
-                    <img 
-                    class="card__img"
-                    src="./images/product-designer.jpg" 
-                    width="270" 
-                    alt="Игорь Демьяненко Product Designer">
+                    
+                    <picture class="card__img">
+                        <source srcset="
+                                        ./images/product-designer.jpg    1x,
+                                        ./images/product-designer-2x.jpg 2x
+                                      " media="(min-width:1200px)" />
+                        <source srcset="
+                                        ./images/product-designer-tab.jpg    1x,
+                                        ./images/product-designer-tab-2x.jpg 2x
+                                      " media="(min-width:768px)" />
+                        <source srcset="
+                                        ./images/product-designer-mob.jpg    1x,
+                                        ./images/product-designer-mob-2x.jpg 2x
+                                      " media="(min-width:320px)" />
+                        <img src="./images/product-designer.jpg" alt="Игорь Демьяненко Product Designer" />
+                    </picture>
                     <div class="card-meta">
                         <h3 class="card-meta__name">Игорь Демьяненко</h3>
                         <p class="card-meta__text" lang="en">Product Designer</p>
@@ -270,11 +285,21 @@
                     </div>
                 </li>
                 <li class="team-list__item">
-                    <img 
-                    class="card__img"
-                    src="./images/frontend-developer.jpg" 
-                    width="270" 
-                    alt="Ольга Репина Frontend Developer">
+                    <picture class="card__img">
+                        <source srcset="
+                                                            ./images/frontend-developer.jpg    1x,
+                                                            ./images/frontend-developer-2x.jpg 2x
+                                                          " media="(min-width:1200px)" />
+                        <source srcset="
+                                                            ./images/frontend-developer-tab.jpg    1x,
+                                                            ./images/frontend-developer-tab-2x.jpg 2x
+                                                          " media="(min-width:768px)" />
+                        <source srcset="
+                                                            ./images/frontend-developer-mob.jpg    1x,
+                                                            ./images/frontend-developer-mob-2x.jpg 2x
+                                                          " media="(min-width:320px)" />
+                        <img src="./images/frontend-developer.jpg" alt="Ольга Репина Frontend Developer" />
+                    </picture>
                     <div class="card-meta">
                         <h3 class="card-meta__name">Ольга Репина</h3>
                         <p class="card-meta__text" lang="en">Frontend Developer</p>
@@ -311,11 +336,22 @@
                     </div>
                 </li>
                 <li class="team-list__item">
-                    <img 
-                    class="card__img"
-                    src="./images/marketing.jpg" 
-                    width="270" 
-                    alt="Николай Тарасов Marketing">
+                    <picture class="card__img">
+                        <source srcset="
+                        ./images/marketing.jpg    1x,
+                        ./images/marketing-2x.jpg 2x
+                        " media="(min-width:1200px)" />
+                        <source srcset="
+                        ./images/marketing-tab.jpg    1x,
+                        ./images/marketing-tab-2x.jpg 2x
+                        " media="(min-width:768px)" />
+                        <source srcset="
+                        ./images/marketing-mob.jpg    1x,
+                        ./images/marketing-mob-2x.jpg 2x
+                        " media="(min-width:320px)" />
+                        <img src="./images/marketing.jpg" alt="Николай Тарасов Marketing" />
+                    </picture>
+
                     <div class="card-meta">
                          <h3 class="card-meta__name">Николай Тарасов</h3>
                          <p class="card-meta__text" lang="en">Marketing</p>
@@ -354,11 +390,21 @@
                 </li>
                 
                 <li class="team-list__item">
-                    <img
-                    class="card__img" 
-                    src="./images/ui-designer.jpg" 
-                    width="270" 
-                    alt="Михаил Ермаков UI Designer">
+                    <picture class="card__img">
+                        <source srcset="
+                           ./images/ui-designer.jpg    1x,
+                         ./images/ui-designer-2x.jpg 2x
+                           " media="(min-width:1200px)" />
+                        <source srcset="
+                          ./images/ui-designer-tab.jpg    1x,
+                           ./images/ui-designer-tab-2x.jpg 2x
+                          " media="(min-width:768px)" />
+                        <source srcset="
+                           ./images/ui-designer-mob.jpg    1x,
+                           ./images/ui-designer-mob-2x.jpg 2x
+                           " media="(min-width:320px)" />
+                        <img src="./images/ui-designer.jpg" alt="Михаил Ермаков UI Designer" />
+                    </picture>
                     <div class="card-meta">
                         <h3 class="card-meta__name">Михаил Ермаков</h3>
                         <p class="card-meta__text" lang="en">UI Designer</p>
@@ -447,7 +493,6 @@
                 </ul>
             </div>
         </section>
-
     </main>
     <!--Подвал -->    <footer class="footer">
         <div class="container footer-container">

@@ -85,6 +85,8 @@
   margin-bottom: 30px;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     flex-basis: calc((100% - 60px) / 2);
+    max-width: 354px;
+
     &:not(:nth-child(2n)) {
       margin-right: 30px;
     }
@@ -149,6 +151,10 @@
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    @media screen and(max-width: 1199px) {
+      flex-shrink: 0;
+      letter-spacing: 0.01em;
+    }
   }
   &__text {
     margin-top: 4px;
