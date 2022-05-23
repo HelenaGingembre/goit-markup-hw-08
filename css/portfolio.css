@@ -183,8 +183,10 @@ img {
   margin-top: 10px;
 }
 
+.menu-open-btn:hover, .menu-open-btn:focus, .menu-open-btn:active,
 .menu-close-btn:hover,
-.menu-close-btn:focus {
+.menu-close-btn:focus,
+.menu-close-btn:active {
   color: #2196f3;
   fill: #2196f3;
 }
@@ -256,7 +258,7 @@ img {
   }
 }
 
-.menu-list__link .current {
+.menu-list__link.current {
   color: #2196f3;
 }
 
@@ -410,6 +412,7 @@ img {
 .mob-menu-list,
 .mob-menu-contact {
   text-align: left;
+  margin-bottom: 48px;
 }
 
 .mob-menu-list__item:not(:last-child),
@@ -427,8 +430,7 @@ img {
   color: #212121;
 }
 
-.mob-menu-list__link:hover,
-.mob-menu-list__link:focus {
+.mob-menu-list__link:hover, .mob-menu-list__link:focus, .mob-menu-list__link:active {
   color: #2196f3;
 }
 

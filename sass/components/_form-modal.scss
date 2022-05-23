@@ -15,8 +15,6 @@
   top: 50%;
   left: 50%;
 
-  width: 528px;
-  height: 581px;
   background-color: rgba(255, 255, 255, 1);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
@@ -24,15 +22,25 @@
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1) rotate(0deg);
   transition: transform 1000ms;
-
-  &__title {
-    margin-bottom: 12px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: $text-color-h;
+  @media screen and (min-width: 450px) and (max-width: 1199px) {
+    width: 450px;
+    height: 609px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
+}
+.modal__title {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(30 / 20);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $text-color-h;
+  @media screen and (min-width: 1200px) {
+    line-height: calc(23 / 20);
   }
 }
 .is-hidden {

@@ -49,10 +49,14 @@
   margin-top: 10px;
 }
 
-.menu-close-btn:hover,
-.menu-close-btn:focus {
-  color: $accent-color;
-  fill: $accent-color;
+.menu-open-btn,
+.menu-close-btn {
+  &:hover,
+  &:focus,
+  &:active {
+    color: $accent-color;
+    fill: $accent-color;
+  }
 }
 .menu-container {
   display: flex;
@@ -116,7 +120,7 @@
   }
 }
 .menu-list__link {
-  .current {
+  &.current {
     color: $accent-color;
   }
 }
@@ -168,10 +172,6 @@
 
   @media screen and (max-width: 767px) {
     display: none;
-
-    &.is-hidden {
-      display: flex;
-    }
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
@@ -236,7 +236,7 @@
 /*****mobile menu***********/
 .mob-menu {
   position: fixed;
-  z-index: 99;
+  z-index: 1;
   top: 0;
   left: 0;
   width: 100vw;
@@ -263,13 +263,18 @@
   justify-content: space-between;
   align-items: flex-start;
 }
-
-.mob-menu-top {
+.mob-menu.is-hidden {
+  display: none;
+  position: absolute;
+  overflow: hidden;
+}
+.container .mob-menu-top {
   width: 100%;
 }
 .mob-menu-list,
 .mob-menu-contact {
   text-align: left;
+  margin-bottom: 48px;
 }
 .mob-menu-list__item:not(:last-child),
 .mob-connect__tel {
@@ -284,9 +289,12 @@
   letter-spacing: 0.02em;
   color: $text-color-h;
 }
-.mob-menu-list__link:hover,
-.mob-menu-list__link:focus {
-  color: $accent-color;
+.mob-menu-list__link {
+  &:hover,
+  &:focus,
+  &:active {
+    color: $accent-color;
+  }
 }
 .mob-connect__tel {
   font-size: 34px;
