@@ -242,7 +242,7 @@
   width: 100vw;
   height: 100vh;
   padding-left: 25px;
-  pointer-events: inherit;
+  // pointer-events: inherit;
   background-color: #ffffff;
 
   pointer-events: none;
@@ -326,8 +326,20 @@
   color: $accent-color;
   display: block;
 }
-
+// .mob-soc__item:not(:last-child)::after {
+//   content: '';
+//   display: block;
+//   height: 100%;
+//   width: 1px;
+//   background-color: rgba(33, 33, 33, 0.2);
+//   margin-left: 10px;
+//   position: absolute;
+//   top: 0;
+//   right: 10px;
+// }
 .mob-soc__item:not(:last-child) {
+  // margin-right: 20px;
+
   padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }

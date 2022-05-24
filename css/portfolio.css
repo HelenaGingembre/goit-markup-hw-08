@@ -379,7 +379,6 @@ img {
   width: 100vw;
   height: 100vh;
   padding-left: 25px;
-  pointer-events: inherit;
   background-color: #ffffff;
   pointer-events: none;
   -webkit-transition: opacity 250ms linear, visibility 250ms linear;
@@ -724,6 +723,13 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100%;
+}
+@media screen and (max-width: 1199px) {
+  .product__title:nth-of-type(2) {
+    flex-shrink: 0;
+  }
 }
 .product__text {
   margin-top: 4px;
@@ -733,6 +739,7 @@ body {
   line-height: 1.88;
   letter-spacing: 0.03em;
   flex-grow: 1;
+  flex-shrink: 1;
 }
 
 .description {
