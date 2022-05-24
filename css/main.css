@@ -1032,7 +1032,6 @@ body {
 .grid__item {
   background-color: #ffffff;
   margin-bottom: 30px;
-  height: 440px;
   display: flex;
   flex-direction: column;
 }
