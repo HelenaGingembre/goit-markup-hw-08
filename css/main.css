@@ -447,8 +447,8 @@ body {
   width: 100vw;
   height: 100vh;
   padding-left: 25px;
+  pointer-events: inherit;
   background-color: #ffffff;
-  pointer-events: none;
   -webkit-transition: opacity 250ms linear, visibility 250ms linear;
   transition: opacity 250ms linear, visibility 250ms linear;
 }
