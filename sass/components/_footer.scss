@@ -8,7 +8,7 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     align-items: flex-start;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
   @media screen and (min-width: 1200px) {
@@ -23,6 +23,14 @@
   @media screen and (max-width: 1199px) {
     &:not(:last-child) {
       margin-bottom: 60px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &:not(:last-child) {
+      width: calc(50%);
+    }
+    &:last-child {
+      width: calc(100%);
     }
   }
 }

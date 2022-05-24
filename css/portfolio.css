@@ -757,7 +757,7 @@ body {
   .footer-container {
     display: flex;
     align-items: flex-start;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 }
@@ -774,6 +774,14 @@ body {
 @media screen and (max-width: 1199px) {
   .footer-container__item:not(:last-child) {
     margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-container__item:not(:last-child) {
+    width: 50%;
+  }
+  .footer-container__item:last-child {
+    width: 100%;
   }
 }
 
@@ -831,12 +839,12 @@ body {
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .form-email__input {
-    max-width: 450px;
+    min-width: 450px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .form-email__input {
-    max-width: 450px;
+    min-width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
